@@ -14,7 +14,7 @@ class ApiService {
   Map<String, String> _getHeaders() {
     return {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ${_authService.token}',
+      'Authorization': 'Bearer ${_authService.token ?? ""}',
     };
   }
 
